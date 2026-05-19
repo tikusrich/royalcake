@@ -1,0 +1,117 @@
+@use "../bootstrap-5.3.8/scss/bootstrap" with (
+    $primary: #6b0f1a,
+    $secondary: #4b2e2e,
+    $warning: #d4a373,
+    $light: #f8f1ea,
+    $dark: #2b1b17,
+    $body-bg: #f8f1ea,
+    $body-color: #2b1b17,
+    $font-family-sans-serif: (
+        "Poppins",
+        sans-serif,
+    ),
+    $border-radius: 1rem
+);
+
+body {
+    scroll-behavior: smooth;
+    background-color: #f8f1ea;
+}
+
+.navbar {
+    background: rgba(43, 27, 23, 0.95);
+    backdrop-filter: blur(10px);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.hero {
+    min-height: 100vh;
+    background:
+        linear-gradient(rgba(43, 27, 23, 0.7), rgba(43, 27, 23, 0.7)),
+        url("https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=1400&auto=format&fit=crop")
+            center/cover;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.hero span {
+    color: #d4a373;
+}
+
+.section-title {
+    color: #6b0f1a;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.card {
+    border: none;
+    transition: 0.3s ease;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.btn-royal {
+    background: #6b0f1a;
+    color: white;
+    border-radius: 50px;
+    padding: 12px 28px;
+    transition: 0.3s;
+}
+
+.btn-royal:hover {
+    background: #4b2e2e;
+    color: #fff;
+}
+
+.about {
+    background: #fff;
+}
+
+.services {
+    background: #f3e7dc;
+}
+
+.portfolio img {
+    height: 250px;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.contact {
+    background: #fff;
+}
+
+footer {
+    background: #2b1b17;
+    color: white;
+}
+
+.social-icon {
+    font-size: 1.4rem;
+    color: #d4a373;
+    margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}
