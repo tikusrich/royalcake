@@ -1,6 +1,8 @@
 # Royal Cake
 Toko kue premium dengan resep kerajaan Inggris, dipadukan sentuhan coklat dan kopi terbaik.
 
+Coba langsung di [sini](https://tikusrich.github.io/royalcake)
+
 Clone repository ini:
 ```
 git clone https://github.com/tikusrich/royalcake.git
